@@ -10,33 +10,43 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as HoverlaSoftLiBannersRouteImport } from './routes/hoverla-soft/li-banners'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const HoverlaSoftLiBannersRoute = HoverlaSoftLiBannersRouteImport.update({
+  id: '/hoverla-soft/li-banners',
+  path: '/hoverla-soft/li-banners',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/hoverla-soft/li-banners': typeof HoverlaSoftLiBannersRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/hoverla-soft/li-banners': typeof HoverlaSoftLiBannersRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/hoverla-soft/li-banners': typeof HoverlaSoftLiBannersRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/hoverla-soft/li-banners'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/hoverla-soft/li-banners'
+  id: '__root__' | '/' | '/hoverla-soft/li-banners'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  HoverlaSoftLiBannersRoute: typeof HoverlaSoftLiBannersRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +58,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/hoverla-soft/li-banners': {
+      id: '/hoverla-soft/li-banners'
+      path: '/hoverla-soft/li-banners'
+      fullPath: '/hoverla-soft/li-banners'
+      preLoaderRoute: typeof HoverlaSoftLiBannersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  HoverlaSoftLiBannersRoute: HoverlaSoftLiBannersRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
