@@ -1,15 +1,24 @@
+import { MeshGradient } from "@paper-design/shaders-react";
+import { useRef } from "react";
+import { HeroCursor } from "@/components/portfolio/hero-cursor";
 import { SiteNav } from "@/components/portfolio/site-nav";
 
-/** Full-bleed hero — portrait background, "Anthem" title plate at the bottom. */
+/** Full-bleed hero — animated mesh-gradient background, "Anthem" title plate
+ *  at the bottom, and a circular photo cursor that replaces the OS cursor. */
 export function Hero() {
+	const headerRef = useRef<HTMLElement>(null);
+
 	return (
-		<header className="relative flex h-screen min-h-180 flex-col overflow-hidden">
+		<header
+			ref={headerRef}
+			className="relative flex h-screen min-h-180 cursor-none flex-col overflow-hidden"
+		>
 			<div className="absolute inset-0 z-0 overflow-hidden">
-				<img
-					src="/portrait.jpg"
-					alt=""
-					aria-hidden="true"
-					className="absolute inset-0 size-full object-cover object-[50%_72%] grayscale contrast-[1.05] brightness-[0.78]"
+				<MeshGradient
+					colors={["#0b0b0b", "#272a2a", "#cecece", "#858585"]}
+					speed={0.3}
+					scale={1}
+					style={{ width: "100%", height: "100%" }}
 				/>
 				<div className="hero-legibility" />
 				<div className="hero-grain" />
@@ -50,6 +59,8 @@ export function Hero() {
 					</div>
 				</div>
 			</div>
+
+			<HeroCursor targetRef={headerRef} />
 		</header>
 	);
 }
