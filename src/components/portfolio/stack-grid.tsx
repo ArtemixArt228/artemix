@@ -6,7 +6,7 @@ export function StackGrid() {
 	const total = STACK.reduce((n, g) => n + g.items.length, 0);
 
 	return (
-		<section className="border-t border-white/12 py-15" id="stack">
+		<section className="py-15" id="stack">
 			<SectionHeader
 				eyebrow="§ 02 · Toolkit"
 				title="Stack"

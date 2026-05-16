@@ -4,7 +4,7 @@ import { CONTACTS } from "@/data/cv";
 export function Contact() {
 	return (
 		<section
-			className="grid grid-cols-2 items-end gap-12 border-t border-white/12 pb-15 pt-25 max-[960px]:grid-cols-1"
+			className="grid grid-cols-2 items-end gap-12 pb-15 pt-25 max-[960px]:grid-cols-1"
 			id="contact"
 		>
 			<div>

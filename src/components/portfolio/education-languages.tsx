@@ -4,7 +4,7 @@ import { EDUCATION, LANGUAGES } from "@/data/cv";
 /** Background — education history and language proficiency. */
 export function EducationLanguages() {
 	return (
-		<section className="border-t border-white/12 py-15" id="background">
+		<section className="py-15" id="background">
 			<SectionHeader
 				eyebrow="§ 03 · Background"
 				title="Education & tongues"

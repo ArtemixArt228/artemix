@@ -15,7 +15,7 @@ export function Hero() {
 		>
 			<div className="absolute inset-0 z-0 overflow-hidden">
 				<MeshGradient
-					colors={["#0b0b0b", "#272a2a", "#cecece", "#858585"]}
+					colors={["#0b0b0b", "#272a2a", "#858585"]}
 					speed={0.3}
 					scale={1}
 					style={{ width: "100%", height: "100%" }}

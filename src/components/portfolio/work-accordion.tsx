@@ -16,7 +16,7 @@ export function WorkAccordion() {
 	const [open, setOpen] = useState<string[]>(["hoverla"]);
 
 	return (
-		<section className="border-t border-white/12 py-15" id="work">
+		<section className="py-15" id="work">
 			<SectionHeader
 				eyebrow="§ 01 · Selected work"
 				title="Things I've shipped"
