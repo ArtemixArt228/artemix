@@ -45,21 +45,16 @@ default breakpoints do not match, so these are translated **exactly** with arbit
 
 - [ ] **Step 1: Run the shadcn init for Base UI**
 
-Run: `pnpm dlx shadcn@latest init --base`
+Run (fully non-interactive — `-t start` targets TanStack Start, `-b base`
+selects Base UI, `-y` skips confirmation):
 
-Answer the prompts:
-- Primitives library: **Base UI**
-- Framework: **Vite** (or whatever it auto-detects — TanStack Start uses Vite)
-- Base color: **Neutral**
-- CSS file: `src/styles.css`
-- CSS variables: **Yes**
-- Import alias for components: `#/components`
-- Import alias for utils: `#/lib/utils`
+`pnpm dlx shadcn@latest init -t start -b base -y`
 
 This installs `@base-ui-components/react`, `clsx`, `tailwind-merge`,
 `class-variance-authority`, `tw-animate-css`, creates `components.json` and
 `src/lib/utils.ts`, and may append a `@theme inline` block + `:root`/`@layer base`
-rules to `src/styles.css`.
+rules to `src/styles.css`. If the CLI still blocks on an interactive prompt,
+stop and report BLOCKED with the exact prompt text.
 
 - [ ] **Step 2: Confirm the import alias resolves**
 
@@ -152,9 +147,10 @@ git commit -m "feat: add Ciridae brand tokens to Tailwind theme"
 
 - [ ] **Step 1: Add the primitives**
 
-Run: `pnpm dlx shadcn@latest add accordion badge button`
+Run: `pnpm dlx shadcn@latest add accordion badge button -y`
 
 The CLI pulls the Base UI variants because the project is configured for Base UI.
+If it blocks on an interactive prompt, stop and report BLOCKED.
 
 - [ ] **Step 2: Remove the built-in chevron from `AccordionTrigger`**
 
