@@ -1,12 +1,12 @@
-import { SectionHeader } from "#/components/portfolio/section-header";
-import { STACK } from "#/data/cv";
+import { SectionHeader } from "@/components/portfolio/section-header";
+import { STACK } from "@/data/cv";
 
 /** Toolkit — a hairline grid of stack categories. */
 export function StackGrid() {
 	const total = STACK.reduce((n, g) => n + g.items.length, 0);
 
 	return (
-		<section className="border-t border-white/12 py-[60px]" id="stack">
+		<section className="border-t border-white/12 py-15" id="stack">
 			<SectionHeader
 				eyebrow="§ 02 · Toolkit"
 				title="Stack"
@@ -15,14 +15,14 @@ export function StackGrid() {
 			<div className="grid grid-cols-4 gap-px border border-white/12 bg-white/12 max-[960px]:grid-cols-2 max-[560px]:grid-cols-1">
 				{STACK.map((g, i) => (
 					<div
-						className="relative flex min-h-[220px] flex-col gap-[18px] bg-charcoal px-6 py-7 transition-colors hover:bg-[#131313]"
+						className="relative flex min-h-55 flex-col gap-4.5 bg-charcoal px-6 py-7 transition-colors hover:bg-[#131313]"
 						key={g.name}
 					>
 						<div className="flex items-baseline justify-between">
-							<span className="font-cond text-xl uppercase tracking-[-0.02em]">
+							<span className="font-cond text-xl uppercase tracking-tight">
 								{g.name}
 							</span>
-							<span className="shrink-0 whitespace-nowrap font-mono text-[11px] tracking-[-0.22px] text-steel">
+							<span className="shrink-0 whitespace-nowrap font-mono text-xs text-steel">
 								{String(i + 1).padStart(2, "0")} /{" "}
 								{String(STACK.length).padStart(2, "0")}
 							</span>
@@ -31,9 +31,9 @@ export function StackGrid() {
 							{g.items.map((it) => (
 								<li
 									key={it}
-									className="flex items-baseline gap-2.5 font-mono text-[13px] leading-[1.2] tracking-[-0.26px] text-ash"
+									className="flex items-baseline gap-2.5 font-mono text-sm leading-tight text-ash"
 								>
-									<span className="h-px w-1 shrink-0 -translate-y-[3px] bg-steel" />
+									<span className="h-px w-1 shrink-0 -translate-y-1 bg-steel" />
 									{it}
 								</li>
 							))}

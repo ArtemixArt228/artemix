@@ -1,10 +1,10 @@
-import { SectionHeader } from "#/components/portfolio/section-header";
-import { EDUCATION, LANGUAGES } from "#/data/cv";
+import { SectionHeader } from "@/components/portfolio/section-header";
+import { EDUCATION, LANGUAGES } from "@/data/cv";
 
 /** Background — education history and language proficiency. */
 export function EducationLanguages() {
 	return (
-		<section className="border-t border-white/12 py-[60px]" id="background">
+		<section className="border-t border-white/12 py-15" id="background">
 			<SectionHeader
 				eyebrow="§ 03 · Background"
 				title="Education & tongues"
@@ -12,9 +12,9 @@ export function EducationLanguages() {
 			/>
 			<div className="grid grid-cols-2 gap-px border border-white/12 bg-white/12 max-[960px]:grid-cols-1">
 				<div className="bg-charcoal p-8">
-					<h3 className="mb-5 flex items-baseline justify-between font-cond text-xl uppercase tracking-[-0.02em]">
+					<h3 className="mb-5 flex items-baseline justify-between font-cond text-xl uppercase tracking-tight">
 						Education{" "}
-						<span className="font-mono text-[11px] tracking-[-0.22px] text-steel">
+						<span className="font-mono text-xs text-steel">
 							{EDUCATION.length} entries
 						</span>
 					</h3>
@@ -23,14 +23,14 @@ export function EducationLanguages() {
 							className="grid grid-cols-[100px_1fr] items-baseline gap-6 border-t border-white/8 py-4 first-of-type:border-t-0 first-of-type:pt-0"
 							key={e.degree}
 						>
-							<span className="font-mono text-[11px] uppercase tracking-[-0.22px] text-steel">
+							<span className="font-mono text-xs uppercase text-steel">
 								{e.years}
 							</span>
 							<div>
-								<div className="font-cond text-lg uppercase tracking-[-0.02em]">
+								<div className="font-cond text-lg uppercase tracking-tight">
 									{e.degree}
 								</div>
-								<div className="mt-1.5 font-mono text-xs tracking-[-0.24px] text-ash">
+								<div className="mt-1.5 font-mono text-xs text-ash">
 									{e.school}
 								</div>
 							</div>
@@ -39,19 +39,19 @@ export function EducationLanguages() {
 				</div>
 
 				<div className="bg-charcoal p-8">
-					<h3 className="mb-5 flex items-baseline justify-between font-cond text-xl uppercase tracking-[-0.02em]">
+					<h3 className="mb-5 flex items-baseline justify-between font-cond text-xl uppercase tracking-tight">
 						Languages{" "}
-						<span className="font-mono text-[11px] tracking-[-0.22px] text-steel">
+						<span className="font-mono text-xs text-steel">
 							{LANGUAGES.length} entries
 						</span>
 					</h3>
-					<div className="flex flex-col gap-[18px]">
+					<div className="flex flex-col gap-4.5">
 						{LANGUAGES.map((l) => (
 							<div
 								className="grid grid-cols-[1fr_2fr_auto] items-center gap-4"
 								key={l.name}
 							>
-								<span className="font-cond text-base uppercase tracking-[-0.02em]">
+								<span className="font-cond text-base uppercase tracking-tight">
 									{l.name}
 								</span>
 								<span className="relative h-0.5 overflow-hidden bg-white/10">
@@ -60,7 +60,7 @@ export function EducationLanguages() {
 										style={{ width: `${l.pct}%` }}
 									/>
 								</span>
-								<span className="whitespace-nowrap font-mono text-[11px] uppercase tracking-[-0.22px] text-steel">
+								<span className="whitespace-nowrap font-mono text-xs uppercase text-steel">
 									{l.level}
 								</span>
 							</div>

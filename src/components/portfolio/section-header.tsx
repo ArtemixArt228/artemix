@@ -11,15 +11,11 @@ export function SectionHeader({
 }) {
 	return (
 		<div className="mb-10 grid grid-cols-[200px_1fr_auto] items-baseline gap-6 max-[960px]:grid-cols-1">
-			<span className="font-mono text-[11px] uppercase tracking-[-0.22px] text-steel">
-				{eyebrow}
-			</span>
-			<h2 className="font-cond text-[clamp(32px,4.5vw,62px)] uppercase leading-[0.95] tracking-[-0.04em] text-white">
+			<span className="font-mono text-xs uppercase text-steel">{eyebrow}</span>
+			<h2 className="font-cond text-[clamp(32px,4.5vw,62px)] uppercase leading-none tracking-tighter text-white">
 				{title}
 			</h2>
-			<span className="font-mono text-[11px] uppercase tracking-[-0.22px] text-steel">
-				{count}
-			</span>
+			<span className="font-mono text-xs uppercase text-steel">{count}</span>
 		</div>
 	);
 }

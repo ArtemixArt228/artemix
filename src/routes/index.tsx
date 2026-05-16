@@ -1,12 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Background } from "#/components/portfolio/background";
-import { Contact } from "#/components/portfolio/contact";
-import { EducationLanguages } from "#/components/portfolio/education-languages";
-import { Hero } from "#/components/portfolio/hero";
-import { HeroIntro } from "#/components/portfolio/hero-intro";
-import { SiteFooter } from "#/components/portfolio/site-footer";
-import { StackGrid } from "#/components/portfolio/stack-grid";
-import { WorkAccordion } from "#/components/portfolio/work-accordion";
+import { Background } from "@/components/portfolio/background";
+import { Contact } from "@/components/portfolio/contact";
+import { EducationLanguages } from "@/components/portfolio/education-languages";
+import { Hero } from "@/components/portfolio/hero";
+import { HeroIntro } from "@/components/portfolio/hero-intro";
+import { SiteFooter } from "@/components/portfolio/site-footer";
+import { StackGrid } from "@/components/portfolio/stack-grid";
+import { WorkAccordion } from "@/components/portfolio/work-accordion";
 import portfolioCss from "../styles/portfolio.css?url";
 
 export const Route = createFileRoute("/")({
@@ -38,10 +38,10 @@ export const Route = createFileRoute("/")({
 
 function Home() {
 	return (
-		<div className="min-h-screen overflow-x-hidden bg-charcoal font-mono text-[14px] leading-none tracking-[-0.28px] text-white antialiased">
+		<div className="min-h-screen overflow-x-hidden bg-charcoal font-mono text-sm leading-none text-white antialiased">
 			<Background />
 			<Hero />
-			<main className="relative z-[1] mx-auto max-w-[1400px] px-8 pb-[60px] max-[560px]:px-[18px]">
+			<main className="relative z-1 mx-auto max-w-350 px-8 pb-15 max-[560px]:px-4.5">
 				<HeroIntro />
 				<WorkAccordion />
 				<StackGrid />
