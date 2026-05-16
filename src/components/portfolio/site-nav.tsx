@@ -37,6 +37,7 @@ export function SiteNav({ overlay = false }: { overlay?: boolean }) {
 				</Badge>
 				<Button
 					variant="outline"
+					nativeButton={false}
 					render={<a href="#contact">Get in touch</a>}
 					className="h-auto gap-2 whitespace-nowrap rounded-pill border-white bg-transparent px-[18px] py-2.5 font-cond text-[14px] uppercase leading-none tracking-[-0.02em] text-white transition-colors hover:bg-white hover:text-charcoal max-[560px]:px-3.5 max-[560px]:py-2 max-[560px]:text-[13px]"
 				/>
