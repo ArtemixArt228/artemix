@@ -18,3 +18,10 @@ coverage
 .tanstack
 .vscode
 .idea
+
+docs
+.agents
+.claude
+CLAUDE.md
+docs
+.playwright-mcp
