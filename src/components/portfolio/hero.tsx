@@ -1,4 +1,5 @@
 import { MeshGradient } from "@paper-design/shaders-react";
+import { ArrowDown } from "lucide-react";
 import { useRef } from "react";
 import { HeroCursor } from "@/components/portfolio/hero-cursor";
 import { SiteNav } from "@/components/portfolio/site-nav";
@@ -33,14 +34,14 @@ export function Hero() {
 						<span>Artem, in studio</span>
 					</div>
 					<div className="flex flex-col gap-1">
-						<span>Lviv · 49.84°N 24.03°E</span>
+						<span>Reykjavík · 64.15°N 21.94°W</span>
 					</div>
 				</div>
 
 				<div className="self-stretch">
 					<span className="mb-4.5 inline-flex items-center gap-3 font-mono text-sm uppercase text-ash">
 						<span className="h-px w-7 shrink-0 bg-ash" />
-						Full-Stack Engineer · MMXXVI
+						Full-Stack Engineer · ARTEMIX
 					</span>
 					<div className="font-cond text-[clamp(80px,16vw,260px)] font-normal uppercase leading-none tracking-tighter text-white [text-shadow:0_2px_40px_rgba(0,0,0,0.45)] max-[960px]:text-[clamp(56px,14vw,110px)]">
 						<span className="block">ARTEM</span>
@@ -51,10 +52,12 @@ export function Hero() {
 				<div className="flex items-start justify-between font-mono text-xs uppercase text-ash [text-shadow:0_1px_8px_rgba(0,0,0,0.6)]">
 					<div className="flex flex-col gap-1">
 						<span>Portfolio · v1.0</span>
-						<span>MMXXVI</span>
+						<span>ARTEMIX</span>
 					</div>
 					<div className="flex flex-col items-end gap-1 text-right">
-						<span>Scroll for index ↓</span>
+						<span className="inline-flex items-center gap-1">
+							Scroll for index <ArrowDown className="size-3.5" />
+						</span>
 						<span>04 sections</span>
 					</div>
 				</div>

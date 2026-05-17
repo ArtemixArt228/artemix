@@ -1,6 +1,8 @@
+import { Circle } from "lucide-react";
+
 const META = [
 	{ label: "Discipline", value: "Full-Stack Engineering" },
-	{ label: "Based in", value: "Lviv, Ukraine" },
+	{ label: "Based in", value: "Reykjavík, Iceland" },
 	{ label: "Stack", value: "TS · Next · Hono · LLMs" },
 ] as const;
 
@@ -16,7 +18,7 @@ export function HeroIntro() {
 					RSC UI, with LLM APIs wired into the products people actually use.
 				</p>
 				<span className="whitespace-nowrap font-mono text-xs uppercase text-steel">
-					Portfolio · v1.0 · MMXXVI
+					Portfolio · v1.0 · ARTEMIX
 				</span>
 			</div>
 
@@ -35,8 +37,9 @@ export function HeroIntro() {
 					<span className="font-mono text-xs uppercase leading-none text-steel">
 						Status
 					</span>
-					<span className="font-cond text-base uppercase leading-none tracking-tight text-white">
-						<span className="text-brand">●</span> Open to work
+					<span className="inline-flex items-center gap-1.5 font-cond text-base uppercase leading-none tracking-tight text-white">
+						<Circle className="size-2 fill-brand text-brand" />
+						Open to work
 					</span>
 				</div>
 			</div>

@@ -1,3 +1,4 @@
+import { Plus } from "lucide-react";
 import { useState } from "react";
 import { SectionHeader } from "@/components/portfolio/section-header";
 import {
@@ -55,11 +56,11 @@ export function WorkAccordion() {
 								<span
 									aria-hidden="true"
 									className={cn(
-										"w-5 justify-self-end text-center font-cond text-xl text-white transition-transform duration-400 ease-out max-[560px]:text-lg",
+										"inline-flex w-5 justify-center justify-self-end text-white transition-transform duration-400 ease-out",
 										isOpen && "rotate-45 text-brand",
 									)}
 								>
-									+
+									<Plus className="size-5 max-[560px]:size-4" />
 								</span>
 							</AccordionTrigger>
 							<AccordionContent className="pl-21 pr-16 max-[960px]:pl-16 max-[960px]:pr-0 max-[560px]:pl-13.5">

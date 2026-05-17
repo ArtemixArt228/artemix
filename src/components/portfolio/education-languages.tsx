@@ -45,27 +45,27 @@ export function EducationLanguages() {
 							{LANGUAGES.length} entries
 						</span>
 					</h3>
-					<div className="flex flex-col gap-4.5">
-						{LANGUAGES.map((l) => (
-							<div
-								className="grid grid-cols-[1fr_2fr_auto] items-center gap-4"
-								key={l.name}
-							>
-								<span className="font-cond text-base uppercase tracking-tight">
+					{LANGUAGES.map((l) => (
+						<div
+							className="border-t border-white/8 py-4 first-of-type:border-t-0 first-of-type:pt-0"
+							key={l.name}
+						>
+							<div className="flex items-baseline justify-between gap-4">
+								<span className="font-cond text-lg uppercase tracking-tight">
 									{l.name}
-								</span>
-								<span className="relative h-0.5 overflow-hidden bg-white/10">
-									<span
-										className="absolute left-0 top-0 h-full bg-white"
-										style={{ width: `${l.pct}%` }}
-									/>
 								</span>
 								<span className="whitespace-nowrap font-mono text-xs uppercase text-steel">
 									{l.level}
 								</span>
 							</div>
-						))}
-					</div>
+							<span className="mt-3 block h-0.5 overflow-hidden bg-white/10">
+								<span
+									className="block h-full bg-white"
+									style={{ width: `${l.pct}%` }}
+								/>
+							</span>
+						</div>
+					))}
 				</div>
 			</div>
 		</section>

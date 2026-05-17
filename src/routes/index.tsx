@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
 			{
 				name: "description",
 				content:
-					"Artem Kovalitskyi — Full-stack engineer. Production TypeScript end-to-end, Next.js, Hono, Drizzle, LLM APIs. Based in Lviv, Ukraine.",
+					"Artem Kovalitskyi — Full-stack engineer. Production TypeScript end-to-end, Next.js, Hono, Drizzle, LLM APIs. Based in Reykjavík, Iceland.",
 			},
 		],
 		links: [

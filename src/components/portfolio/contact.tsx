@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import { CONTACTS } from "@/data/cv";
 
 /** Closing contact strip — oversized headline + a list of links. */
@@ -31,8 +32,8 @@ export function Contact() {
 						<span className="font-cond text-xl uppercase tracking-tight">
 							{c.val}
 						</span>
-						<span className="font-cond text-base transition-transform group-hover:translate-x-1 group-hover:text-brand">
-							↗
+						<span className="transition-transform group-hover:translate-x-1 group-hover:text-brand">
+							<ArrowUpRight className="size-4" />
 						</span>
 					</a>
 				))}

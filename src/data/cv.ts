@@ -135,8 +135,8 @@ export const CONTACTS: { lbl: string; val: string; href: string }[] = [
 	{ lbl: "Phone", val: "+380 68 371 1267", href: "tel:+380683711267" },
 	{
 		lbl: "Location",
-		val: "Lviv, Ukraine",
-		href: "https://maps.google.com/?q=Lviv,Ukraine",
+		val: "Reykjavík, Iceland",
+		href: "https://maps.google.com/?q=Reykjavik,Iceland",
 	},
 	{ lbl: "GitHub", val: "github.com/artemix", href: "https://github.com" },
 ];
