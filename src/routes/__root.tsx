@@ -27,13 +27,32 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'TanStack Start Starter',
+        name: 'theme-color',
+        content: '#0b0b0b',
+      },
+      {
+        title: 'Artem Kovalitskyi — Full-Stack Engineer',
       },
     ],
     links: [
       {
         rel: 'stylesheet',
         href: appCss,
+      },
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico',
+        sizes: '16x16 32x32 48x48',
+      },
+      {
+        rel: 'apple-touch-icon',
+        href: '/logo192.png',
+        sizes: '192x192',
+      },
+      {
+        rel: 'manifest',
+        href: '/manifest.json',
       },
     ],
   }),
