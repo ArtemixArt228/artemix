@@ -4,6 +4,7 @@ export interface WorkEntry {
 	role: string;
 	years: string;
 	location: string;
+	website: string;
 	body: string[];
 	stack: string[];
 }
@@ -15,6 +16,7 @@ export const WORK: WorkEntry[] = [
 		role: "Full-Stack Engineer",
 		years: "Feb 2025 — Present",
 		location: "Remote",
+		website: "https://hoverlasoft.com/",
 		body: [
 			"Building production applications on a modern type-safe stack: Next.js (App Router, RSC), TanStack ecosystem on the front end, with Hono APIs, Drizzle ORM, and oRPC end-to-end.",
 			"Shipped a voice-controlled admin panel that makes shipment management accessible for users with disabilities — integrating LLM APIs for natural-language command parsing and intent recognition.",
@@ -37,6 +39,7 @@ export const WORK: WorkEntry[] = [
 		role: "Full-Stack Engineer",
 		years: "Dec 2022 — Feb 2025",
 		location: "Lviv",
+		website: "https://cgsteam.io/",
 		body: [
 			"Built the front-end for a parking application in React and Next.js with TypeScript, shipped as both a responsive web app and a native-feeling mobile app via Capacitor.",
 			"Designed a library of custom UI components from scratch in Tailwind CSS and Framer Motion — animations, transitions, and gesture-based interactions handled in-house.",
@@ -59,6 +62,7 @@ export const WORK: WorkEntry[] = [
 		role: "Front-End Engineer",
 		years: "Mar 2022 — Dec 2022",
 		location: "Lviv",
+		website: "https://develops.today/",
 		body: [
 			"Built and consumed GraphQL APIs for a karaoke web application — powering song catalog search, real-time session sync, user playlists, and scoring.",
 			"Designed PostgreSQL schemas backing the catalog and session data, and worked across MySQL and MongoDB on adjacent client projects.",
@@ -138,5 +142,5 @@ export const CONTACTS: { lbl: string; val: string; href: string }[] = [
 		val: "Reykjavík, Iceland",
 		href: "https://maps.google.com/?q=Reykjavik,Iceland",
 	},
-	{ lbl: "GitHub", val: "github.com/artemix", href: "https://github.com" },
+	{ lbl: "GitHub", val: "github.com/artemix", href: "https://github.com/ArtemixArt228" },
 ];

@@ -1,4 +1,4 @@
-import { Plus } from "lucide-react";
+import { ArrowUpRight, Plus } from "lucide-react";
 import { useState } from "react";
 import { SectionHeader } from "@/components/portfolio/section-header";
 import {
@@ -74,6 +74,15 @@ export function WorkAccordion() {
 												{p}
 											</p>
 										))}
+										<a
+											href={w.website}
+											target="_blank"
+											rel="noreferrer"
+											className="mt-5 inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-tight text-steel transition-colors hover:text-white"
+										>
+											{new URL(w.website).hostname.replace(/^www\./, "")}
+											<ArrowUpRight className="size-3.5" />
+										</a>
 									</div>
 									<div className="flex flex-wrap content-start gap-1.5">
 										{w.stack.map((s) => (

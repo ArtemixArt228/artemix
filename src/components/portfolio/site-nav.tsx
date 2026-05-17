@@ -40,7 +40,7 @@ export function SiteNav({ overlay = false }: { overlay?: boolean }) {
 					variant="outline"
 					nativeButton={false}
 					render={<a href="#contact">Get in touch</a>}
-					className="h-auto gap-2 whitespace-nowrap rounded-pill border-white bg-transparent px-4.5 py-2.5 font-cond text-sm uppercase leading-none tracking-tight text-white transition-colors hover:bg-white hover:text-charcoal max-[560px]:px-3.5 max-[560px]:py-2 max-[560px]:text-sm"
+					className="h-auto cursor-pointer gap-2 whitespace-nowrap rounded-pill border-white bg-transparent px-4.5 py-2.5 font-cond text-sm uppercase leading-none tracking-tight text-white transition-colors hover:bg-white hover:text-charcoal max-[560px]:px-3.5 max-[560px]:py-2 max-[560px]:text-sm"
 				/>
 				<Button
 					variant="outline"
@@ -54,7 +54,7 @@ export function SiteNav({ overlay = false }: { overlay?: boolean }) {
 							Download CV
 						</a>
 					}
-					className="h-auto gap-2 whitespace-nowrap rounded-pill bg-white px-4.5 py-2.5 font-cond text-sm uppercase leading-none tracking-tight text-charcoal transition-colors hover:bg-ash max-[560px]:px-3.5 max-[560px]:py-2 max-[560px]:text-sm"
+					className="h-auto cursor-pointer gap-2 whitespace-nowrap rounded-pill bg-white px-4.5 py-2.5 font-cond text-sm uppercase leading-none tracking-tight text-charcoal transition-colors hover:bg-ash max-[560px]:px-3.5 max-[560px]:py-2 max-[560px]:text-sm"
 				/>
 			</div>
 		</nav>
