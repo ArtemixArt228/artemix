@@ -41,9 +41,8 @@ export const WORK: WorkEntry[] = [
 		location: "Lviv",
 		website: "https://cgsteam.io/",
 		body: [
-			"Built the front-end for a parking application in React and Next.js with TypeScript, shipped as both a responsive web app and a native-feeling mobile app via Capacitor.",
-			"Designed a library of custom UI components from scratch in Tailwind CSS and Framer Motion — animations, transitions, and gesture-based interactions handled in-house.",
-			"Worked alongside designers to translate Figma into production-ready, responsive interfaces; also built React/Next.js front-ends and NestJS/Express APIs for a corporate platform spanning public site and admin tools.",
+			"Built and consumed GraphQL APIs for a karaoke web application — powering song catalog search, real-time session sync, user playlists, and scoring.",
+			"Designed PostgreSQL schemas backing the catalog and session data, and worked across MySQL and MongoDB on adjacent client projects.",
 		],
 		stack: [
 			"React",
@@ -64,8 +63,9 @@ export const WORK: WorkEntry[] = [
 		location: "Lviv",
 		website: "https://develops.today/",
 		body: [
-			"Built and consumed GraphQL APIs for a karaoke web application — powering song catalog search, real-time session sync, user playlists, and scoring.",
-			"Designed PostgreSQL schemas backing the catalog and session data, and worked across MySQL and MongoDB on adjacent client projects.",
+			"Built the front-end for a parking application in React and Next.js with TypeScript, shipped as both a responsive web app and a native-feeling mobile app via Capacitor.",
+			"Designed a library of custom UI components from scratch in Tailwind CSS and Framer Motion — animations, transitions, and gesture-based interactions handled in-house.",
+			"Worked alongside designers to translate Figma into production-ready, responsive interfaces; also built React/Next.js front-ends and NestJS/Express APIs for a corporate platform spanning public site and admin tools.",
 		],
 		stack: ["React", "GraphQL", "PostgreSQL", "MySQL", "MongoDB"],
 	},
