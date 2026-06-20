@@ -127,7 +127,7 @@ export const EDUCATION: { years: string; degree: string; school: string }[] = [
 
 export const LANGUAGES: { name: string; level: string; pct: number }[] = [
 	{ name: "Ukrainian", level: "Native", pct: 100 },
-	{ name: "English", level: "Upper-Intermediate", pct: 75 },
+	{ name: "English", level: "Fluent", pct: 100 },
 ];
 
 export const CONTACTS: { lbl: string; val: string; href: string }[] = [
@@ -136,11 +136,16 @@ export const CONTACTS: { lbl: string; val: string; href: string }[] = [
 		val: "artemix.portfolio@gmail.com",
 		href: "mailto:artemix.portfolio@gmail.com",
 	},
-	{ lbl: "Phone", val: "+380 68 371 1267", href: "tel:+380683711267" },
+	{ lbl: "Phone", val: "+354 791 6295", href: "tel:+3547916295" },
 	{
 		lbl: "Location",
 		val: "Reykjavík, Iceland",
 		href: "https://maps.google.com/?q=Reykjavik,Iceland",
 	},
-	{ lbl: "GitHub", val: "github.com/artemix", href: "https://github.com/ArtemixArt228" },
+	{
+		lbl: "LinkedIn",
+		val: "linkedin.com/in/artemix-kovart",
+		href: "https://www.linkedin.com/in/artemix-kovart",
+	},
+	{ lbl: "GitHub", val: "github.com/artemix", href: "https://github.com/artemix" },
 ];
